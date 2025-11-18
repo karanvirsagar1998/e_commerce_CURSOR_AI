@@ -9,7 +9,8 @@ import ProductDetail from './components/ProductDetail'
 import EnhancedFilters from './components/EnhancedFilters'
 import Checkout from './components/Checkout'
 
-const API_URL = 'http://localhost:8080/api/products'
+// Use environment variable or default to localhost for development
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/products'
 
 function App() {
   const [products, setProducts] = useState([])
