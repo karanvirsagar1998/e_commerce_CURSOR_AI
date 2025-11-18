@@ -9,7 +9,23 @@ Before starting, ensure you have:
 - ✅ Maven 3.6+ (`mvn -version`)
 - ✅ Node.js 18+ (`node -v`)
 
-If not installed, see [SETUP.md](SETUP.md) for installation instructions.
+### Installing Prerequisites (If Not Installed)
+
+**Java 17+ (Required for Backend):**
+- **Windows:** Download from https://adoptium.net/ (choose JDK 17 or higher)
+- **macOS:** `brew install openjdk@17`
+- **Linux:** `sudo apt install openjdk-17-jdk`
+- Verify: `java -version` (should show version 17+)
+
+**Maven 3.6+ (Required for Backend):**
+- **Windows:** Download from https://maven.apache.org/download.cgi, extract, add to PATH
+- **macOS:** `brew install maven`
+- **Linux:** `sudo apt install maven`
+- Verify: `mvn -version`
+
+**Node.js 18+ (Required for Frontend):**
+- **All Platforms:** Download LTS version from https://nodejs.org/
+- Verify: `node -v` and `npm -v` (should show version 18+)
 
 ---
 
@@ -59,8 +75,10 @@ Navigate to: **http://localhost:5173**
 
 ### Backend Issues:
 - **Port 8080 in use?** Change port in `backend/src/main/resources/application.properties`
-- **Java version wrong?** Must be Java 17 or higher
-- **Maven not found?** Add Maven to PATH (see SETUP.md)
+- **Java version wrong?** Must be Java 17 or higher (download from https://adoptium.net/)
+- **Maven not found?** Add Maven's `bin` directory to your PATH environment variable
+- **"java is not recognized"**: Make sure Java is added to PATH
+- **"mvn is not recognized"**: Add Maven's bin directory to PATH
 
 ### Frontend Issues:
 - **Port 5173 in use?** Vite will auto-select next port
@@ -76,9 +94,7 @@ Navigate to: **http://localhost:5173**
 
 ## 📚 More Information
 
-- **Detailed Setup:** See [SETUP.md](SETUP.md)
-- **Full Documentation:** See [README.md](README.md)
-- **Verification:** See [VERIFICATION_CHECKLIST.md](VERIFICATION_CHECKLIST.md)
+- **Project Overview:** See [README.md](README.md) for features, tech stack, and API endpoints
 
 ---
 
@@ -101,5 +117,9 @@ Navigate to: **http://localhost:5173**
 
 ---
 
-**Need Help?** Check the troubleshooting section in [SETUP.md](SETUP.md) or [VERIFICATION_CHECKLIST.md](VERIFICATION_CHECKLIST.md)
+**Need Help?** 
+- Check the troubleshooting section above
+- Verify all prerequisites are installed correctly
+- Ensure backend is running before starting frontend
+- Check browser console for any errors
 

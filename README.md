@@ -38,38 +38,26 @@ A modern, responsive e-commerce website built with Spring Boot (backend) and Rea
 - Node.js 18 or higher
 - Maven 3.6 or higher
 
-### Backend Setup
+**👉 For detailed setup instructions, see [QUICK_START.md](QUICK_START.md)**
 
-1. Navigate to the backend directory:
-```bash
-cd backend
-```
+### Quick Setup
 
-2. Build and run the Spring Boot application:
-```bash
-mvn spring-boot:run
-```
+1. **Start Backend:**
+   ```bash
+   cd backend
+   mvn spring-boot:run
+   ```
+   Backend runs on `http://localhost:8080`
 
-The backend will start on `http://localhost:8080`
+2. **Start Frontend (new terminal):**
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+   Frontend runs on `http://localhost:5173`
 
-### Frontend Setup
-
-1. Navigate to the frontend directory:
-```bash
-cd frontend
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-The frontend will start on `http://localhost:5173`
+3. **Open Browser:** Navigate to `http://localhost:5173`
 
 ## API Endpoints
 
